@@ -57,10 +57,17 @@ h1 {
   justify-content: space-between;
 }
 
+.text_header {
+  display: flex;
+  justify-content: space-between;
+  width: 333px;
+}
+
 .text_div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-right: 16px;
   height: 52px;
   border-bottom: solid #e8e8ea 1px;
@@ -70,17 +77,16 @@ h1 {
   display: none;
 }
 
-.text p {
+.text_header p {
   font-size: 14px;
   color: #4b4c5f;
+  display: flex;
+  justify-content: space-between;
 }
 
 .div_on_press {
-  width: 334px;
+  width: 350px;
   height: 65px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .p_on_press {
@@ -88,11 +94,12 @@ h1 {
   font-weight: bold;
 }
 
-.span_on_press {
+.text_div .on_press {
   color: #787887;
   display: block;
+  font-size: 12px;
 }
 
 .text_div .rotate {
-  rotate: 90deg;
+  rotate: 180deg;
 }
